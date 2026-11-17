@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10111a">
+  <title>Numix | پنل وضعیت تبلیغات</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Numix">
+        <span class="brand-mark">N</span>
+        <span><strong>NUMIX</strong><small>AD CONTROL</small></span>
+      </a>
+      <span class="read-only"><i></i> فقط نمایش وضعیت</span>
+    </header>
+
+    <section class="intro">
+      <div>
+        <p class="eyebrow">ADVERTISEMENT OVERVIEW</p>
+        <h1>وضعیت جایگاه‌های تبلیغاتی</h1>
+        <p class="subtitle">این صفحه فقط وضعیت تبلیغات ثبت‌شده در فایل تنظیمات را نمایش می‌دهد.</p>
+      </div>
+      <button id="refreshBtn" class="refresh" type="button">↻ بروزرسانی</button>
+    </section>
+
+    <section class="summary" aria-label="خلاصه جایگاه‌ها">
+      <div class="summary-card"><span>کل جایگاه‌ها</span><strong id="totalCount">۴</strong></div>
+      <div class="summary-card"><span>دارای تبلیغ</span><strong id="activeCount">—</strong></div>
+      <div class="summary-card"><span>خالی</span><strong id="emptyCount">—</strong></div>
+    </section>
+
+    <section id="slots" class="slots" aria-live="polite">
+      <div class="loading">در حال خواندن اطلاعات تبلیغات…</div>
+    </section>
+
+    <div class="notice">
+      <span class="notice-icon">i</span>
+      <p>برای تغییر تبلیغ، فایل رسانه را دستی در پوشه <code>ads</code> جایگزین کن و فایل <code>ads-config.json</code> را به‌روزرسانی و در GitHub ثبت کن. تاریخ‌ها فقط یادداشت هستند و زمان‌بندی خودکار ندارند.</p>
+    </div>
+
+    <footer><span>NUMIX AD CONTROL · STATIC PANEL</span><span id="lastUpdated">اطلاعات از ads-config.json خوانده می‌شود.</span></footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

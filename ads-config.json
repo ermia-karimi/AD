@@ -1,0 +1,40 @@
+{
+  "slots": [
+    {
+      "id": 1,
+      "enabled": true,
+      "file": "ads/slot-1.jpg",
+      "type": "image",
+      "uploadDate": "",
+      "removeDate": "",
+      "label": ""
+    },
+    {
+      "id": 2,
+      "enabled": true,
+      "file": "ads/slot-2.jpg",
+      "type": "image",
+      "uploadDate": "",
+      "removeDate": "",
+      "label": ""
+    },
+    {
+      "id": 3,
+      "enabled": false,
+      "file": "ads/slot-3.jpg",
+      "type": "image",
+      "uploadDate": "",
+      "removeDate": "",
+      "label": ""
+    },
+    {
+      "id": 4,
+      "enabled": false,
+      "file": "ads/slot-4.jpg",
+      "type": "image",
+      "uploadDate": "",
+      "removeDate": "",
+      "label": ""
+    }
+  ]
+}
